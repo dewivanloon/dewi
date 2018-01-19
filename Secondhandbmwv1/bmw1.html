@@ -1,0 +1,82 @@
+<html>
+<head>
+
+  <title>jQuery Mobile page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css" /> 
+  <script src="jquery-1.11.1.min.js"></script> 
+  <script src="jquery.mobile-1.4.5.min.js"></script> 
+
+</head>
+
+  <body>
+		<div id="pag1" data-role="page" data-theme="b">
+			<div data-role="header">
+				<h1>auto verkopen?</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<form action="" method="post">
+					<label class="ui-hidden-accessible" for="naam">Vul je naam in:</label>
+					<input name="naam" id="naam" type="text" placeholder="Vul je naam in" value="" data-mini="true" required>
+					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+					</fieldset>
+					<label class="ui-hidden-accessible" for="serie">Kies je serie:</label>
+					<select name="serie" id="serie" multiple="multiple" data-native-menu="false" data-mini="true">
+						<option value="1">Serie 1</option>
+						<option value="2">Serie 2</option>
+						<option value="3">Serie 3</option>
+						<option value="4">Serie 4</option>
+						<option value="5">Serie 5</option>
+					</select>
+					<form action="kies je kleur">
+							<label class="ui-hidden-accessible" for="kleur">Kies je kleur:</label>
+					  <input type="radio" name="kleur" value="rood"> Rood<br>
+					  <input type="radio" name="kleur" value="wit"> Wit<br>
+					  <input type="radio" name="kleur" value="zwart"> Zwart<br>
+					   <input type="radio" name="kleur" value="zilver"> Zilver<br>
+				 	</form>
+				 	<form action="kies je brandstof">
+							<label class="ui-hidden-accessible" for="brandstof">Kies je brandstof:</label>
+					  <input type="radio" name="brandstof" value="rood"> bezine<br>
+					  <input type="radio" name="brandstof" value="wit"> diesel<br>
+					  <input type="radio" name="brandstof" value="zwart"> gas<br>
+				 	</form>
+					<label class="ui-hidden-accessible" for="bouwjaar">Kies je bouwjaar:</label>
+					<select name="bouwjaar" id="serie" multiple="multiple" data-native-menu="false" data-mini="true">
+						<option value="">1980 </option>
+						<option value="1">1990</option>
+						<option value="2">2000</option>
+						<option value="3">2010</option>
+						<option value="4">2015</option>
+					</select>
+			<form action="">
+				 <form method="post">
+                <label for="Kilometer">Aantal kilometers:</label>
+                <input name="Aantal kilometers" id="kilometers" type="range" min="0" max="200000" step="1" value="0">
+            </form>	
+           
+            <form action="extra opties">
+ 				 <select name="extra opties">
+			    <option value="velgen"> LM velgen </option>
+			    <option value="metallic"> metallic </option>
+			    <option value="navigatie"> navigatie </option>
+			    <option value="stoelverwarming"> stoelverwarming </option>
+				  </select>
+				  <input type="submit" value="Submit">
+			</form>
+			<form action="" method="post">
+					<label class="ui-hidden-accessible" for="naam">Wat is uw vraagprijs?</label>
+					<input name="prijs" id="prijs" type="number" placeholder="prijs" value="" data-mini="true" required>
+					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+			</fieldset>
+							
+			</div>
+			<div data-role="footer" data-position="fixed">
+			</div>
+		</div>
+  </body>
+</html>
+</body>
